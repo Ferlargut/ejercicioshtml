@@ -1,11 +1,10 @@
-var farenheit=document.getElementById("farenheit").value;
-var celsius=document.getElementById("celsius").value;
-
 function convertirCelsius(farenheit){
+    var farenheit=document.getElementById("farenheit").value;
     var resultado=((farenheit-32)*5)/9;
-    return resultado;
+    document.getElementById("celsius").value =resultado;
 }
 function convertirFarenheit(celsius){
+    var celsius=document.getElementById("celsius").value;
     var resultado=((celsius*9)/5)-2;
-    return resultado;
+    document.getElementById("farenheit").value =resultado;
 }
